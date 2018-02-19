@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.Date;
+//package automat;
 
 /**
  * Model af en simpel billetautomat til enkeltbilletter med én fast pris.
@@ -10,9 +9,6 @@ public class Billetautomat {
 	private int antalBilletterSolgt; // Antal billetter automaten i alt har solgt
 	private boolean montoertilstand;
 	private int zone;
-
-	ArrayList<String> log = new ArrayList<String>();
-	Date time = new Date();
 
 	/**
 	 * Opret en billetautomat der saelger billetter til 10 kr.
@@ -36,7 +32,6 @@ public class Billetautomat {
 	 */
 	public void indsaetPenge(int beloeb) {
 		balance = balance + beloeb;
-		log.add(new Date() + " er der indsaeted: " + beloeb + " kr.");
 	}
 
 	/**
@@ -76,7 +71,6 @@ public class Billetautomat {
 			System.out.println("##########B##T#########");
 			System.out.println();
 
-			log.add(new Date() + " er der koebt en billet til: " + billetpris * zone + " kr." + " med: " + zone + " zoner");
 			antalBilletterSolgt = antalBilletterSolgt + 1;
 			balance = balance - (billetpris * zone); // Billetter koster 10 kroner
 			zone = 0;
@@ -87,7 +81,6 @@ public class Billetautomat {
 		int returbeloeb = balance;
 		balance = 0;
 		System.out.println("Du faar " + returbeloeb + "  kr retur");
-		log.add(new Date() + " er der retuneret " + returbeloeb + " kr.");
 		return returbeloeb;
 	}
 
@@ -127,22 +120,6 @@ public class Billetautomat {
 	public void nulstil() {
 		if (montoertilstand) {
 			antalBilletterSolgt = 0;
-		} else {
-			System.out.println("Afvist - log ind foerst");
-		}
-	}
-
-	public void getLog() {
-		if (montoertilstand) {
-			int localSize = log.size();
-			if (localSize > 0) {
-				for (int i = 0; i < localSize; i++) {
-					System.out.println(log.get(0));
-					log.remove(0);
-				}
-			} else {
-				System.out.println("Ingen ny data siden sidst!");
-			}
 		} else {
 			System.out.println("Afvist - log ind foerst");
 		}
