@@ -121,7 +121,11 @@ public class Billetautomat {
 	}
 
 	public void setBilletpris(int billetpris) {
-		this.billetpris = billetpris;
+		if (montoertilstand) {
+			this.billetpris = billetpris;
+		} else {
+			System.out.println("Afvist - log ind foerst");
+		}
 	}
 
 	public void nulstil() {
