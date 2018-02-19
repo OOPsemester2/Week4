@@ -18,7 +18,7 @@ public class Terning {
 		vaerdi = (int) (tilfaeldigtTal * 6 + 1);
 	}
 
-	/** Aflaeser terningens vaerdi */
+	/** Aflaeser terningens vaerdiæøå */
 	public int getVaerdi() {
 		return vaerdi;
 	}
