@@ -1,9 +1,8 @@
-package kapitel_04;
+//package kapitel_04;
 
 public class BenytTerning {
 	public static void main(String[] arg) {
-		Terning t;
-		t = new Terning(); // opret terning
+		Terning t = new Terning(); // opret terning
 
 		// Slaa nu med terningen indtil vi faar en sekser
 		boolean sekser = false;

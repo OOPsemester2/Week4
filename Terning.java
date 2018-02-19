@@ -1,4 +1,4 @@
-package kapitel_04;
+//package kapitel_04;
 
 /** En klasse der beskriver 6-sidede terninger */
 public class Terning {
