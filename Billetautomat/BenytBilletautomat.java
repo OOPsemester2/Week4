@@ -70,6 +70,6 @@ public class BenytBilletautomat {
 				System.out.println("Ugyldigt valg, proev igen");
 			}
 		}
-		//tastatur.colse();
+		//tastatur.close();
 	}
 }
