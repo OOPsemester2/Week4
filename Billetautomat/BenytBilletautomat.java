@@ -64,5 +64,6 @@ public class BenytBilletautomat {
 				System.out.println("Ugyldigt valg, proev igen");
 			}
 		}
+		tastetur.colse();
 	}
 }
