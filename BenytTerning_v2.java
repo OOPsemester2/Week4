@@ -33,5 +33,6 @@ public class BenytTerning_v2 {
 			System.out.println();
 		}
 		System.out.printf("\nVi slog %d 6'er efter %d kast", sekser, antalKast);
+		console.colse();
 	}
 }
