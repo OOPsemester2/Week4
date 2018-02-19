@@ -4,6 +4,7 @@
 public class Terning {
 	/** antallet af øjne paa den side paa terningen, der vender opad lige nu */
 	private int vaerdi;
+	private int vaerdiæøå;
 
 	/** konstruktør der opretter en terning */
 	public Terning() {
@@ -18,7 +19,7 @@ public class Terning {
 		vaerdi = (int) (tilfaeldigtTal * 6 + 1);
 	}
 
-	/** Aflaeser terningens vaerdi */
+	/** Aflaeser terningens vaerdiæøå */
 	public int getVaerdi() {
 		return vaerdi;
 	}
