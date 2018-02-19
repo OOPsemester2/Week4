@@ -1,4 +1,3 @@
-//package automat;
 
 public class BenytBilletautomat {
 	public static void main(String[] arg) {
@@ -18,12 +17,13 @@ public class BenytBilletautomat {
 			System.out.println("Tast 3 for at faa returpengene");
 			System.out.println("Tast 4 for at faa balance");
 			System.out.println();
-			System.out.println("Tast 10 for at logge ind som montoer");
+			System.out.println("Tast 10 for at logge ind som montoer\n");
 			if (automat.erMontoer()) {
 				System.out.println("Tast 11 for at se status (montoer)");
 				System.out.println("Tast 12 for at nulstille (montoer)");
 				System.out.println("Tast 13 for at saette billetpris (montoer)");
-				System.out.println("Tast 14 for at logge ud af montoertilstand");
+				System.out.println("Tast 14 for at se billetsalg (montoer)");
+				System.out.println("Tast 15 for at logge ud af montoertilstand\n");
 			}
 			int valg = tastatur.nextInt();
 			tastatur.nextLine();
@@ -32,11 +32,13 @@ public class BenytBilletautomat {
 				System.out.print("Skriv beloeb: ");
 				int beloeb = tastatur.nextInt();
 				automat.indsaetPenge(beloeb);
+				System.out.println();
 			} else if (valg == 2) {
 				while (automat.zoner() < 1) {
 					System.out.print("Indtast zoner:");
 					int zone = tastatur.nextInt();
 					automat.zones(zone);
+					System.out.println();
 				}
 				automat.udskrivBillet();
 			} else if (valg == 3) {
@@ -58,12 +60,16 @@ public class BenytBilletautomat {
 				int beloeb = tastatur.nextInt();
 				automat.setBilletpris(beloeb);
 			} else if (valg == 14) {
+				System.out.println();
+				automat.getLog();
+				System.out.println();
+			} else if (valg == 15) {
 				automat.montoerLogin("");
 				;
 			} else {
 				System.out.println("Ugyldigt valg, proev igen");
 			}
 		}
-		tastetur.colse();
+		//tastatur.colse();
 	}
 }
