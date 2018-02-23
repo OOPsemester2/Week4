@@ -7,5 +7,8 @@ public class BenytBoks3 {
 		Boks3 enAndenBoks = new Boks3(5, 5, 10, 10); // brug den anden konstruktoer
 		System.out.println("Volumen er: " + enAndenBoks.volumen());
 		System.out.println("Vaegten er: " + enAndenBoks.Vaegten());
+
+		Pyramide enPyramide = new Pyramide(10, 5); // brug den anden konstruktoer
+		System.out.println("Volumen er: " + enPyramide.volumen());
 	}
 }
