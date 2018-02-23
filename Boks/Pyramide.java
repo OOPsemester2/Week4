@@ -5,7 +5,7 @@ public class Pyramide {
 
   /** konstruktoer der opretter en standardboks */
   public Pyramide() {
-    System.out.println("\nStandardboks oprettes");
+    System.out.println("\nStandardpyramide oprettes");
     side = 10.0;
     hoejde = 10.0;
   }
