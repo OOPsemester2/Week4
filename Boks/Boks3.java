@@ -16,7 +16,7 @@ public class Boks3 {
 
   /** en anden konstruktoer der faar bredde, hoejde og laengde */
   public Boks3(double lgd, double b, double h, double m) {
-    System.out.println("Boks oprettes med lgd=" + lgd + " b=" + b + " h=" + h + " m=" + m);
+    System.out.println("\nBoks oprettes med lgd=" + lgd + " b=" + b + " h=" + h + " m=" + m);
     saetMaal(lgd, b, h, m);
   }
 
