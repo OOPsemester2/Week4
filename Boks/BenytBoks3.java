@@ -8,7 +8,10 @@ public class BenytBoks3 {
 		System.out.println("Volumen er: " + enAndenBoks.volumen());
 		System.out.println("Vaegten er: " + enAndenBoks.Vaegten());
 
-		Pyramide enPyramide = new Pyramide(10, 5); // brug den anden konstruktoer
+		Pyramide enPyramide = new Pyramide(); // brug konstruktoeren uden parametre
 		System.out.println("Volumen er: " + enPyramide.volumen());
+
+		Pyramide enAndenPyramide = new Pyramide(10, 5); // brug den anden konstruktoer
+		System.out.println("Volumen er: " + enAndenPyramide.volumen());
 	}
 }
