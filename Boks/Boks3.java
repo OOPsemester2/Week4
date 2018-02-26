@@ -43,7 +43,7 @@ public class Boks3 {
   }
 
   public double Vaegten() {
-    double masse = massefylde * (laengde * bredde * hoejde);
+    double masse = massefylde * volumen();
     return masse;
   }
 }
